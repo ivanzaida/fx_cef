@@ -1,0 +1,17 @@
+[package]
+name = "fx_cef_tools"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fx_cef_internal = { path = "../fx_cef_internal" }
+anyhow = { workspace = true }
+
+
+[[bin]]
+name = "download-cef"
+path = "./src/download_cef.rs"
+
+[[bin]]
+name = "generate-bindings"
+path = "./src/generate_bindings.rs"

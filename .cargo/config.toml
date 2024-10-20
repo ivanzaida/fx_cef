@@ -1,0 +1,6 @@
+[alias]
+download-cef = "run --bin download-cef --release"
+generate-bindings = "run --bin generate-bindings --release"
+
+[env]
+CEF_ARTIFACTS_DIR = { relative = true, force = true, value = "vendor/cef" }
